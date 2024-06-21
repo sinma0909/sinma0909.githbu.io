@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #f7b5e6;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,11 +116,11 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #e6dddd;
+		color: #1dee16;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
-		letter-spacing: 0.025em;
+		letter-spacing: 0.25em;
 		line-height: 1.65;
 	}
 
@@ -181,7 +181,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #f8a9e7;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -219,7 +219,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: 3em;
 		}
 
 		h2 {
@@ -3949,4 +3949,27 @@ input, select, textarea {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+		.back-btn {
+			position: fixed; /* 將元素設定成固定位置，會固定在網頁畫面的某個地方 */
+			right: 50px;  /* 元素的位置要離畫面右邊多遠 */
+			bottom: 50px; /* 元素的位置要離畫面下面多遠 */
+			z-index: 10;  /* 元素的圖層位置 */
+			border-bottom: 0;  /* 去掉下面出現的底線 */
+			background-color: brown;  /* 元素顏色 */
+			width: 50px;              /* 元素寬度 */
+			height: 50px;             /* 元素高度 */
+			border-radius: 50px;      /* 讓元素變成圓形 */
+			display: flex;            /* 元素的顯示模式 */
+			justify-content: center;  /* 水平置中 */
+			align-items: center;      /* 垂直置中 */
+			box-shadow: 2px 2px 10px 1px #242943;  /* 陰影*/
+			font-size: 1.2em;         /* 文字大小 */
+		
+			overflow: hidden;         /* 讓元素裏頭的圖片不要超出範圍 */
+		}
+		
+		.back-img {
+			width: 100%;
+			height: 100%;
 		}
